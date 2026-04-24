@@ -7,7 +7,7 @@ body {
     content: '';
     position: fixed;
     inset: 0;
-    background-image: url('images/IMG_6433.JPG');
+    background-image: url('../images/IMG_6433.JPG');
     background-size: cover;
     background-position: center;
     z-index: -3;
@@ -48,7 +48,7 @@ html { scroll-behavior: smooth; }
   .spac-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('images/42F62308-7E06-468F-AFC5-97DD6D9888D6.JPG');
+    background-image: url('../images/42F62308-7E06-468F-AFC5-97DD6D9888D6.JPG');
     background-size: cover;
     background-position: center 20%;
     z-index: 0;
@@ -163,8 +163,8 @@ html { scroll-behavior: smooth; }
   .spac-ig-icon {
     display: block;
     width: 28px; height: 28px;
-    -webkit-mask-image: url('images/white_instagram_logo.png');
-    mask-image: url('images/white_instagram_logo.png');
+    -webkit-mask-image: url('../images/white_instagram_logo.png');
+    mask-image: url('../images/white_instagram_logo.png');
     -webkit-mask-size: contain;
     mask-size: contain;
     -webkit-mask-repeat: no-repeat;
@@ -2616,7 +2616,7 @@ html { scroll-behavior: smooth; }
   .cta-bg {
     position: absolute;
     inset: 0;
-    background-image: url('images/4C69943B-BDA7-4D51-9C55-C7D81389143E.JPG');
+    background-image: url('../images/4C69943B-BDA7-4D51-9C55-C7D81389143E.JPG');
     background-size: cover;
     background-position: center;
     z-index: 0;
