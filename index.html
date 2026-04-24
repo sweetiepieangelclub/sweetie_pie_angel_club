@@ -1,17 +1,16 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Apr 22 2026 18:56:31 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="69d03ccc60156415ac394c39" data-wf-site="69d03ccb60156415ac394c35">
+<html>
 <head>
   <meta charset="utf-8">
   <title>SweetiePieAngelClub</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
+  <meta name="description" content="Sweetie Pie Angel Club — Reiki, breathwork &amp; spiritual wellness for the curious soul. Book a session today.">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/sweetiepieangelclub-9ea0ab.webflow.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Philosopher:300,400,500,600,700"]  }});</script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
@@ -25,7 +24,7 @@
     content: '';
     position: fixed;
     inset: 0;
-    background-image: url('https://cdn.prod.website-files.com/69d03ccb60156415ac394c35/69d149921010759cfb2a12b8_IMG_6433.JPG');
+    background-image: url('images/IMG_6433.JPG');
     background-size: cover;
     background-position: center;
     z-index: -3;
@@ -59,7 +58,6 @@ html { scroll-behavior: smooth; }
   <section class="section">
     <div class="code-embed w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .spac-hero-wrapper {
     position: relative;
     width: calc(100% - 30px);
@@ -72,7 +70,7 @@ html { scroll-behavior: smooth; }
   .spac-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://cdn.prod.website-files.com/69d03ccb60156415ac394c35/69d03e109e01fad04a3befbf_42F62308-7E06-468F-AFC5-97DD6D9888D6.JPG');
+    background-image: url('images/42F62308-7E06-468F-AFC5-97DD6D9888D6.JPG');
     background-size: cover;
     background-position: center 20%;
     z-index: 0;
@@ -171,14 +169,48 @@ html { scroll-behavior: smooth; }
     animation: fadeLinkIn 0.6s ease forwards;
     animation-delay: 1s;
   }
+  .spac-ig {
+    position: relative;
+    display: inline-flex;
+  }
+  .spac-ig::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #FDC5F5, #B388EB, #8093F1, #72DDF7);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .spac-ig-icon {
+    display: block;
+    width: 28px; height: 28px;
+    -webkit-mask-image: url('images/white_instagram_logo.png');
+    mask-image: url('images/white_instagram_logo.png');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background: white;
+    background-size: 200% auto;
+    transition: background-position 0.4s ease, transform 0.3s ease;
+  }
+  .spac-ig:hover .spac-ig-icon {
+    background: linear-gradient(90deg, #FDC5F5, #B388EB, #8093F1, #72DDF7);
+    background-size: 200% auto;
+    background-position: right center;
+    transform: translateY(-2px) scale(1.1);
+  }
   .spac-ig img {
     width: 28px; height: 28px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease;
   }
   .spac-ig:hover img {
     transform: translateY(-2px) scale(1.1);
-    opacity: 0.75;
   }
+  .spac-ig:hover::after { width: 100%; }
   /* BUTTONS */
   @property --glow-angle {
     syntax: '<angle>';
@@ -576,8 +608,8 @@ html { scroll-behavior: smooth; }
         <!--  MOBILE MENU  -->
         <div class="spac-mobile-menu" id="mobileMenu">
           <button class="spac-mobile-close" onclick="closeMobileMenu()">✕</button>
-          <img class="spac-mobile-menu-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
-          <img class="spac-mobile-menu-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
+          <img class="spac-mobile-menu-star-1" src="images/Pink_Star.png" alt="">
+          <img class="spac-mobile-menu-star-2" src="images/Pink_Star.png" alt="">
           <div class="spac-mobile-menu-line"></div>
           <a href="#home" onclick="closeMobileMenu()">Home</a>
           <a href="#about" onclick="closeMobileMenu()">About</a>
@@ -586,6 +618,9 @@ html { scroll-behavior: smooth; }
           <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
           <a href="https://calendly.com/sweetiepieangelclub" class="spac-mobile-btn">
             Book A Session
+          </a>
+          <a class="spac-ig" href="https://www.instagram.com/sweetiepieangelclub/" target="_blank" onclick="closeMobileMenu()">
+            <img src="images/white_instagram_logo.png" alt="Instagram">
           </a>
         </div>
         <!--  BUTTERFLIES  -->
@@ -659,7 +694,7 @@ html { scroll-behavior: smooth; }
         <nav class="spac-nav">
           <div class="spac-nav-left">
             <a class="spac-logo" href="#">
-              <img src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d0310702b23180772fd56b_Sweetie__Logo__Update.png" alt="Sweetie Pie Angel Club Logo">
+              <img src="images/Sweetie__Logo__Update.png" alt="Sweetie Pie Angel Club Logo">
             </a>
             <ul class="spac-nav-links">
               <li>
@@ -680,8 +715,8 @@ html { scroll-behavior: smooth; }
             </ul>
           </div>
           <div class="spac-nav-right">
-            <a class="spac-ig" href="#" target="_blank">
-              <img src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d034d0ea2ff3ba925f7660_IG__Icon.png" alt="Instagram">
+            <a class="spac-ig" href="https://www.instagram.com/sweetiepieangelclub/" target="_blank">
+              <span class="spac-ig-icon"></span>
             </a>
             <a class="spac-nav-btn" href="https://calendly.com/sweetiepieangelclub">
               <span class="btn-shimmer"></span>
@@ -719,7 +754,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .intro-statement-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -854,10 +888,10 @@ html { scroll-behavior: smooth; }
         <div class="intro-statement-blob-1"></div>
         <div class="intro-statement-blob-2"></div>
         <div class="intro-statement-blob-3"></div>
-        <img class="intro-statement-star intro-statement-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
-        <img class="intro-statement-star intro-statement-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
-        <img class="intro-statement-star intro-statement-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
-        <img class="intro-statement-star intro-statement-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
+        <img class="intro-statement-star intro-statement-star-1" src="images/Pink_Star.png" alt="">
+        <img class="intro-statement-star intro-statement-star-2" src="images/Pink_Star.png" alt="">
+        <img class="intro-statement-star intro-statement-star-3" src="images/Pink_Star.png" alt="">
+        <img class="intro-statement-star intro-statement-star-4" src="images/Pink_Star.png" alt="">
         <div class="intro-statement-inner">
           <div class="intro-statement-holo-line intro-statement-animate intro-statement-delay-1"></div>
           <!--  ✏️ REPLACE WITH MINA'S QUOTE OR MISSION STATEMENT  -->
@@ -883,7 +917,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="code-embed-2 w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .collab-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -1104,7 +1137,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .offerings-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -1349,10 +1381,10 @@ html { scroll-behavior: smooth; }
       <div class="offerings-section" id="offerings">
         <div class="off-blob-1"></div>
         <div class="off-blob-2"></div>
-        <img class="off-star off-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="off-star off-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="off-star off-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="off-star off-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="off-star off-star-1" src="images/Pink_Star.png" alt="star">
+        <img class="off-star off-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="off-star off-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="off-star off-star-4" src="images/Pink_Star.png" alt="star">
         <div class="off-holo-line off-animate off-delay-1"></div>
         <h2 class="offerings-heading off-animate off-delay-2">Offerings</h2>
         <div class="offerings-row">
@@ -1413,7 +1445,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .benefits-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -1713,10 +1744,10 @@ html { scroll-behavior: smooth; }
         <div class="ben-blob-1"></div>
         <div class="ben-blob-2"></div>
         <div class="ben-blob-3"></div>
-        <img class="ben-star ben-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="ben-star ben-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="ben-star ben-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="ben-star ben-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="ben-star ben-star-1" src="images/Pink_Star.png" alt="star">
+        <img class="ben-star ben-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="ben-star ben-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="ben-star ben-star-4" src="images/Pink_Star.png" alt="star">
         <!--  BUTTERFLIES  -->
         <div class="ben-butterfly ben-bf-1">
           <svg width="45" height="34" viewbox="0 0 40 30" fill="none">
@@ -1791,7 +1822,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .community-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -2041,10 +2071,10 @@ html { scroll-behavior: smooth; }
         <div class="com-blob-1"></div>
         <div class="com-blob-2"></div>
         <div class="com-blob-3"></div>
-        <img class="com-star com-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="com-star com-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="com-star com-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="com-star com-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="com-star com-star-1" src="images/Pink_Star.png" alt="star">
+        <img class="com-star com-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="com-star com-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="com-star com-star-4" src="images/Pink_Star.png" alt="star">
         <div class="com-butterfly com-bf-1">
           <svg width="40" height="30" viewbox="0 0 40 30" fill="none">
             <path d="M20 15 C10 5, 0 2, 2 10 C4 18, 12 18, 20 15Z" fill="#C084FC" opacity="0.8"></path>
@@ -2094,7 +2124,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .testimonials-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -2393,10 +2422,10 @@ html { scroll-behavior: smooth; }
         <div class="test-blob-1"></div>
         <div class="test-blob-2"></div>
         <div class="test-blob-3"></div>
-        <img class="test-star test-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="test-star test-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="test-star test-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="test-star test-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="test-star test-star-1" src="images/Pink_Star.png" alt="star">
+        <img class="test-star test-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="test-star test-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="test-star test-star-4" src="images/Pink_Star.png" alt="star">
         <div class="test-header">
           <div class="test-holo-line test-animate test-delay-1"></div>
           <!--  ✏️ EDIT HEADING HERE  -->
@@ -2451,7 +2480,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .intro-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -2638,12 +2666,12 @@ html { scroll-behavior: smooth; }
         <div class="intro-blob-2"></div>
         <div class="intro-blob-3"></div>
         <div class="intro-blob-4"></div>
-        <img class="intro-star intro-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="intro-star intro-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="intro-star intro-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="intro-star intro-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="intro-star intro-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="intro-star intro-star-4" src="images/Pink_Star.png" alt="star">
         <div class="intro-content">
           <div class="intro-star-row intro-animate intro-delay-1">
-            <img class="intro-star-inline" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+            <img class="intro-star-inline" src="images/Pink_Star.png" alt="star">
             <div class="intro-holo-line"></div>
           </div>
           <h2 class="intro-heading intro-animate intro-delay-2">Meet Mina</h2>
@@ -2665,7 +2693,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-iframe w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .events-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -2910,10 +2937,10 @@ html { scroll-behavior: smooth; }
         <div class="events-blob-1"></div>
         <div class="events-blob-2"></div>
         <div class="events-blob-3"></div>
-        <img class="events-star events-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
-        <img class="events-star events-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
-        <img class="events-star events-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
-        <img class="events-star events-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="">
+        <img class="events-star events-star-1" src="images/Pink_Star.png" alt="">
+        <img class="events-star events-star-2" src="images/Pink_Star.png" alt="">
+        <img class="events-star events-star-3" src="images/Pink_Star.png" alt="">
+        <img class="events-star events-star-4" src="images/Pink_Star.png" alt="">
         <!--  LEFT — Luma embed  -->
         <div class="events-embed-col events-animate events-delay-1">
           <iframe src="https://luma.com/embed/calendar/cal-2AkNdQQVjWJQ35I/events" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -2943,7 +2970,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .faq-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -3165,10 +3191,10 @@ html { scroll-behavior: smooth; }
         <div class="faq-blob-1"></div>
         <div class="faq-blob-2"></div>
         <div class="faq-blob-3"></div>
-        <img class="faq-star faq-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="faq-star faq-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="faq-star faq-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="faq-star faq-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="faq-star faq-star-1" src="images/Pink_Star.png" alt="star">
+        <img class="faq-star faq-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="faq-star faq-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="faq-star faq-star-4" src="images/Pink_Star.png" alt="star">
         <div class="faq-header">
           <div class="faq-holo-line faq-animate faq-delay-1"></div>
           <h2 class="faq-heading faq-animate faq-delay-2">Frequently Asked Questions</h2>
@@ -3274,7 +3300,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .cta-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -3301,7 +3326,7 @@ html { scroll-behavior: smooth; }
   .cta-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://cdn.prod.website-files.com/69d03ccb60156415ac394c35/69d03e2cbc5d82931e48747b_4C69943B-BDA7-4D51-9C55-C7D81389143E.JPG');
+    background-image: url('images/4C69943B-BDA7-4D51-9C55-C7D81389143E.JPG');
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -3511,10 +3536,10 @@ html { scroll-behavior: smooth; }
           <div class="cta-bg"></div>
           <div class="cta-overlay"></div>
         </div>
-        <img class="cta-star cta-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="cta-star cta-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="cta-star cta-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="cta-star cta-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="cta-star cta-star-1" src="images/Pink_Star.png" alt="star">
+        <img class="cta-star cta-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="cta-star cta-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="cta-star cta-star-4" src="images/Pink_Star.png" alt="star">
         <div class="cta-butterfly cta-bf-1">
           <svg width="45" height="34" viewbox="0 0 40 30" fill="none">
             <path d="M20 15 C10 5, 0 2, 2 10 C4 18, 12 18, 20 15Z" fill="white" opacity="0.9"></path>
@@ -3570,7 +3595,6 @@ html { scroll-behavior: smooth; }
   <section>
     <div class="w-embed w-script">
       <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
   .footer-section {
     width: calc(100% - 30px);
     margin: 15px;
@@ -3826,10 +3850,10 @@ html { scroll-behavior: smooth; }
         <div class="footer-blob-1"></div>
         <div class="footer-blob-2"></div>
         <div class="footer-blob-3"></div>
-        <img class="footer-star footer-star-1" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="footer-star footer-star-2" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="footer-star footer-star-3" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
-        <img class="footer-star footer-star-4" src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69d17a32645c148b33abf1c4_Pink_Star.png" alt="star">
+        <img class="footer-star footer-star-1" src="images/Pink_Star.png" alt="star">
+        <img class="footer-star footer-star-2" src="images/Pink_Star.png" alt="star">
+        <img class="footer-star footer-star-3" src="images/Pink_Star.png" alt="star">
+        <img class="footer-star footer-star-4" src="images/Pink_Star.png" alt="star">
         <div class="footer-inner">
           <div class="footer-top">
             <div class="footer-brand footer-animate footer-delay-1">
