@@ -93,3 +93,21 @@ const footerObserver = new IntersectionObserver((entries) => {
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.footer-animate').forEach(el => footerObserver.observe(el));
+
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(contactForm)).toString()
+      }).then(() => {
+        contactForm.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      }).catch(() => {
+        contactForm.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      });
+    });
+  }

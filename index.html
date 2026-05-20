@@ -755,7 +755,7 @@ Mina created such a soft, supportive container that made it easy to learn, pract
               <h3 class="footer-form-heading">Get In Touch</h3>
               <!-- ✏️ EDIT: Form subtext -->
               <p class="footer-form-sub">Have a question or want to connect before booking? Send a message and Mina will get back to you soon.</p>
-              <form class="footer-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <form class="footer-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact">
                 <input type="hidden" name="bot-field" style="display:none">
                 <div class="footer-form-row">
@@ -768,6 +768,9 @@ Mina created such a soft, supportive container that made it easy to learn, pract
                   Send Message
                 </button>
               </form>
+              <div id="form-success" style="display:none; margin-top:24px; text-align:center; color:#fff; font-family:'Lato',sans-serif; font-size:16px; line-height:1.6; opacity:0.9;">
+                thank you so much for reaching out. mina will be in touch soon.
+              </div>
             </div>
           </div>
           <div class="footer-divider"></div>
