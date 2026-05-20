@@ -3068,5 +3068,10 @@ html { scroll-behavior: smooth; }
     .footer-form-heading { font-size: 22px; }
     .footer-logo { width: 90px; }
     .footer-star-1 { width: 40px; }
+  }
+
+  /* Sitewide lowercase — hero is excluded */
+  body { text-transform: lowercase; }
+  .spac-hero-content, .spac-hero-content * { text-transform: none; }
     .footer-star-2 { display: none; }
   }
