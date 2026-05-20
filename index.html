@@ -755,7 +755,9 @@ Mina created such a soft, supportive container that made it easy to learn, pract
               <h3 class="footer-form-heading">Get In Touch</h3>
               <!-- ✏️ EDIT: Form subtext -->
               <p class="footer-form-sub">Have a question or want to connect before booking? Send a message and Mina will get back to you soon.</p>
-              <form class="footer-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+              <form class="footer-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="hidden" name="bot-field" style="display:none">
                 <div class="footer-form-row">
                   <input class="footer-input" type="text" name="name" placeholder="Your Name" required="">
                   <input class="footer-input" type="email" name="email" placeholder="Your Email" required="">
