@@ -3070,8 +3070,9 @@ html { scroll-behavior: smooth; }
     .footer-star-1 { width: 40px; }
   }
 
-  /* Sitewide lowercase — hero is excluded */
+  /* Sitewide lowercase — hero and testimonials are excluded */
   body { text-transform: lowercase; }
-  .spac-hero-content, .spac-hero-content * { text-transform: none; }
+  .spac-hero-content, .spac-hero-content *,
+  .testimonials-section, .testimonials-section * { text-transform: none; }
     .footer-star-2 { display: none; }
   }
