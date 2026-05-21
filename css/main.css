@@ -3021,6 +3021,8 @@ html { scroll-behavior: smooth; }
     display: flex; align-items: center;
     justify-content: space-between;
   }
+  .footer-bottom .footer-copyright:last-child { text-align: right; }
+  .footer-bottom .footer-copyright { flex: 1; }
   .footer-copyright {
     font-family: 'Lato', sans-serif;
     font-size: 13px; color: rgba(74, 56, 96, 0.6);
