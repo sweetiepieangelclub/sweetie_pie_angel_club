@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Sweetie Honey';
+  src: url('../fonts/Sweetie Honey.otf') format('opentype'),
+       url('../fonts/Sweetie Honey.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     position: relative;
     overflow-x: hidden;
@@ -41,7 +49,7 @@ html { scroll-behavior: smooth; }
     width: calc(100% - 30px);
     height: 95vh;
     overflow: hidden;
-    font-family: 'Philosopher', serif;
+    font-family: 'Sweetie Honey', serif;
     border-radius: 20px;
     margin: 15px;
   }
@@ -112,7 +120,7 @@ html { scroll-behavior: smooth; }
   .spac-nav-links a {
     color: white;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.08em;
@@ -205,7 +213,7 @@ html { scroll-behavior: smooth; }
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.35);
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 0.05em;
     text-decoration: none;
     cursor: pointer;
@@ -347,7 +355,7 @@ html { scroll-behavior: smooth; }
   .spac-mobile-menu a {
     color: white;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 26px;
     letter-spacing: 0.12em;
     position: relative;
@@ -459,7 +467,7 @@ html { scroll-behavior: smooth; }
     gap: 20px;
   }
   .spac-hero-title {
-    font-family: 'Philosopher', serif;
+    font-family: 'Sweetie Honey', serif;
     font-size: 96px;
     color: white;
     margin: 0;
@@ -474,7 +482,7 @@ html { scroll-behavior: smooth; }
     100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
   }
   .spac-hero-tagline {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     color: rgba(255,255,255,0.9);
     margin: 0;
@@ -655,8 +663,8 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .intro-statement-text {
-    font-family: 'Philosopher', serif;
-    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
     font-weight: 400;
     color: #2D1B4E;
     line-height: 1.6em;
@@ -665,7 +673,7 @@ html { scroll-behavior: smooth; }
     letter-spacing: 0.01em;
   }
   .intro-statement-sub {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 17px;
     font-weight: 300;
     color: #4A3860;
@@ -744,7 +752,7 @@ html { scroll-behavior: smooth; }
     filter: blur(50px); pointer-events: none; z-index: 0;
   }
   .collab-label {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.25em;
@@ -939,8 +947,8 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .offerings-heading {
-    font-family: 'Philosopher', serif;
-    font-size: 56px; font-weight: 700; color: #2D1B4E;
+    font-family: 'Sweetie Honey', serif;
+    font-size: 46px; font-weight: 700; color: #2D1B4E;
     text-align: center; margin: 0 0 60px 0;
     position: relative; z-index: 2;
   }
@@ -987,14 +995,14 @@ html { scroll-behavior: smooth; }
     z-index: 2; box-sizing: border-box;
   }
   .offer-card-content h3 {
-    font-family: 'Philosopher', serif;
-    font-size: 40px; color: #ffffff;
-    margin: 0 0 12px 0; line-height: 1.1;
+    font-family: 'Sweetie Honey', serif;
+    font-size: 28px; color: #ffffff;
+    margin: 0 0 12px 0; line-height: 1.2;
   }
   .offer-card-content p {
     font-size: 15px; color: rgba(255,255,255,0.8);
     line-height: 1.8; margin: 0 0 24px 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
   /* Button wrapper — allows glow to escape card's overflow:hidden */
   .offer-btn-wrap {
@@ -1019,7 +1027,7 @@ html { scroll-behavior: smooth; }
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.35);
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     letter-spacing: 0.05em;
     text-decoration: none;
@@ -1087,20 +1095,20 @@ html { scroll-behavior: smooth; }
   .off-delay-4 { transition-delay: 0.7s; }
   @media (max-width: 1024px) {
     .offerings-section { padding: 60px 40px; width: calc(100% - 30px); }
-    .offerings-heading { font-size: 44px; margin-bottom: 40px; }
+    .offerings-heading { font-size: 36px; margin-bottom: 40px; }
     .offerings-row { gap: 16px; }
     .offer-card { height: 480px; }
-    .offer-card-content h3 { font-size: 28px; }
+    .offer-card-content h3 { font-size: 22px; }
     .offer-card-content { padding: 28px 24px; }
     .off-star-1 { width: 70px; }
     .off-star-2 { width: 40px; }
   }
   @media (max-width: 768px) {
     .offerings-section { padding: 50px 24px; width: calc(100% - 20px); margin: 10px; border-radius: 16px; }
-    .offerings-heading { font-size: 36px; margin-bottom: 32px; }
+    .offerings-heading { font-size: 30px; margin-bottom: 32px; }
     .offerings-row { flex-direction: column; gap: 20px; }
     .offer-card { width: 100%; height: 400px; }
-    .offer-card-content h3 { font-size: 28px; }
+    .offer-card-content h3 { font-size: 22px; }
     .offer-card-content p { font-size: 14px; }
     .offer-card-1:hover, .offer-card-2:hover, .offer-card-3:hover { transform: none; }
     .off-star-3, .off-star-4 { display: none; }
@@ -1109,10 +1117,10 @@ html { scroll-behavior: smooth; }
   }
   @media (max-width: 480px) {
     .offerings-section { padding: 40px 16px; width: calc(100% - 16px); margin: 8px; border-radius: 12px; }
-    .offerings-heading { font-size: 30px; margin-bottom: 24px; }
+    .offerings-heading { font-size: 24px; margin-bottom: 24px; }
     .offer-card { height: 340px; }
     .offer-card-content { padding: 20px; }
-    .offer-card-content h3 { font-size: 24px; }
+    .offer-card-content h3 { font-size: 18px; }
     .offer-btn { font-size: 13px; padding: 10px 20px; }
     .off-star-1 { width: 50px; }
     .off-star-2 { display: none; }
@@ -1264,15 +1272,15 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .ben-heading {
-    font-family: 'Philosopher', serif;
-    font-size: 56px;
+    font-family: 'Sweetie Honey', serif;
+    font-size: 46px;
     font-weight: 700;
     color: #2D1B4E;
     margin: 0;
     line-height: 1.1;
   }
   .ben-subheading {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     color: #4A3860;
     margin: 16px 0 0 0;
@@ -1330,15 +1338,15 @@ html { scroll-behavior: smooth; }
     gap: 16px;
   }
   .ben-card-title {
-    font-family: 'Philosopher', serif;
-    font-size: 32px;
+    font-family: 'Sweetie Honey', serif;
+    font-size: 24px;
     font-weight: 700;
     color: #2D1B4E;
     margin: 0;
     line-height: 1.2;
   }
   .ben-card-desc {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: #4A3860;
     line-height: 1.8em;
@@ -1366,10 +1374,10 @@ html { scroll-behavior: smooth; }
       padding: 80px 40px;
       width: calc(100% - 30px);
     }
-    .ben-heading { font-size: 44px; }
+    .ben-heading { font-size: 36px; }
     .ben-cards { gap: 16px; }
     .ben-card-body { padding: 0 28px; }
-    .ben-card-title { font-size: 26px; }
+    .ben-card-title { font-size: 20px; }
     .ben-star-1 { width: 70px; }
     .ben-star-2 { width: 40px; }
     .ben-bf-3 { display: none; }
@@ -1382,13 +1390,13 @@ html { scroll-behavior: smooth; }
       margin: 10px;
       border-radius: 16px;
     }
-    .ben-heading { font-size: 36px; }
+    .ben-heading { font-size: 30px; }
     .ben-subheading { font-size: 16px; }
     .ben-header { margin-bottom: 40px; }
     .ben-cards { flex-direction: column; gap: 16px; }
     .ben-card { padding-bottom: 36px; }
     .ben-card-body { padding: 0 24px; }
-    .ben-card-title { font-size: 24px; }
+    .ben-card-title { font-size: 18px; }
     .ben-card-desc { font-size: 15px; }
     .ben-card-1:hover,
     .ben-card-2:hover,
@@ -1406,7 +1414,7 @@ html { scroll-behavior: smooth; }
       margin: 8px;
       border-radius: 12px;
     }
-    .ben-heading { font-size: 30px; }
+    .ben-heading { font-size: 24px; }
     .ben-card-body { padding: 0 20px; }
     .ben-card-title { font-size: 22px; }
     .ben-star-1 { width: 50px; }
@@ -1506,17 +1514,17 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .com-heading {
-    font-family: 'Philosopher', serif; font-size: 52px; font-weight: 700;
+    font-family: 'Sweetie Honey', serif; font-size: 42px; font-weight: 700;
     color: #2D1B4E; margin: 0; line-height: 1.1; letter-spacing: -0.01em;
   }
   .com-para {
-    font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 400;
+    font-family: 'Nunito', sans-serif; font-size: 17px; font-weight: 400;
     color: #4A3860; line-height: 1.8em; margin: 0;
   }
   .com-perks { display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0; list-style: none; }
   .com-perk {
     display: flex; align-items: center; gap: 12px;
-    font-family: 'Lato', sans-serif; font-size: 16px; color: #4A3860; font-weight: 400;
+    font-family: 'Nunito', sans-serif; font-size: 16px; color: #4A3860; font-weight: 400;
   }
   .com-perk-dot {
     width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
@@ -1538,7 +1546,7 @@ html { scroll-behavior: smooth; }
     background: rgba(255, 255, 255, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: #2D1B4E;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     letter-spacing: 0.05em;
     text-decoration: none;
@@ -1612,7 +1620,7 @@ html { scroll-behavior: smooth; }
   @media (max-width: 1024px) {
     .community-section { width: calc(100% - 30px); }
     .com-content { padding: 60px 40px; }
-    .com-heading { font-size: 40px; }
+    .com-heading { font-size: 32px; }
     .com-para { font-size: 16px; }
     .com-star-1 { width: 70px; }
     .com-star-2 { width: 40px; }
@@ -1638,7 +1646,7 @@ html { scroll-behavior: smooth; }
       background: linear-gradient(to bottom, transparent 60%, rgba(255,255,255,0.15) 100%);
     }
     .com-content { padding: 48px 28px; }
-    .com-heading { font-size: 34px; }
+    .com-heading { font-size: 28px; }
     .com-para { font-size: 15px; }
     .com-btn { align-self: stretch; text-align: center; }
     .com-star-3, .com-star-4 { display: none; }
@@ -1652,7 +1660,7 @@ html { scroll-behavior: smooth; }
     .com-photo-wrap { min-height: 360px; }
     .com-photo { object-position: center 45%; }
     .com-content { padding: 36px 20px; }
-    .com-heading { font-size: 28px; }
+    .com-heading { font-size: 22px; }
     .com-perk { font-size: 15px; }
     .com-star-1 { width: 50px; }
     .com-star-2 { display: none; }
@@ -1760,15 +1768,15 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .test-heading {
-    font-family: 'Philosopher', serif;
-    font-size: 56px;
+    font-family: 'Sweetie Honey', serif;
+    font-size: 46px;
     font-weight: 700;
     color: #2D1B4E;
     margin: 0;
     line-height: 1.1;
   }
   .test-subheading {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     color: #4A3860;
     margin: 16px 0 0 0;
@@ -1799,7 +1807,7 @@ html { scroll-behavior: smooth; }
     box-shadow: 0 12px 40px rgba(179, 136, 235, 0.4), inset 0 1px 0 rgba(255,255,255,0.9);
   }
   .test-featured-quote {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     color: #4A3860;
     line-height: 1.9em;
@@ -1818,14 +1826,14 @@ html { scroll-behavior: smooth; }
     width: 100%;
   }
   .test-featured-name {
-    font-family: 'Philosopher', serif;
+    font-family: 'Sweetie Honey', serif;
     font-size: 20px;
     font-weight: 700;
     color: #2D1B4E;
     margin: 0;
   }
   .test-featured-title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     color: #8093F1;
     margin: 0;
@@ -1833,6 +1841,78 @@ html { scroll-behavior: smooth; }
     letter-spacing: 0.03em;
   }
   /* SMALLER CARDS ROW */
+  .test-review-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    position: relative;
+    z-index: 2;
+  }
+  .test-review-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #2D1B4E;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    transition: background 0.4s ease, transform 0.3s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+  .test-review-btn::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 100px;
+    background: conic-gradient(
+      from var(--off-glow-angle, 0deg),
+      #FDC5F5, #B388EB, #8093F1, #72DDF7, #FDC5F5
+    );
+    opacity: 0;
+    filter: blur(10px);
+    z-index: -1;
+    transition: opacity 0.4s ease;
+    animation: offGlowSpin 3s linear infinite;
+  }
+  .test-review-btn:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.15),
+      0 0 15px rgba(253, 197, 245, 0.9),
+      0 0 30px rgba(179, 136, 235, 0.7),
+      0 0 60px rgba(128, 147, 241, 0.5),
+      0 0 90px rgba(114, 221, 247, 0.3);
+  }
+  .test-review-btn:hover::before { opacity: 1; }
+  .test-review-btn .btn-shimmer {
+    position: absolute; inset: 0;
+    border-radius: 100px; overflow: hidden;
+    background: linear-gradient(
+      105deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.25) 40%,
+      rgba(253, 197, 245, 0.35) 50%,
+      rgba(255, 255, 255, 0.2) 60%,
+      transparent 80%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+  .test-review-btn:hover .btn-shimmer { transform: translateX(100%); }
   .test-cards {
     display: flex;
     gap: 24px;
@@ -1857,7 +1937,7 @@ html { scroll-behavior: smooth; }
   .test-card-1:hover { box-shadow: 0 12px 40px rgba(253, 197, 245, 0.5), inset 0 1px 0 rgba(255,255,255,0.9); }
   .test-card-2:hover { box-shadow: 0 12px 40px rgba(114, 221, 247, 0.5), inset 0 1px 0 rgba(255,255,255,0.9); }
   .test-quote {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: #4A3860;
     line-height: 1.8em;
@@ -1873,14 +1953,14 @@ html { scroll-behavior: smooth; }
     padding-top: 16px;
   }
   .test-author-name {
-    font-family: 'Philosopher', serif;
+    font-family: 'Sweetie Honey', serif;
     font-size: 18px;
     font-weight: 700;
     color: #2D1B4E;
     margin: 0;
   }
   .test-author-title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     color: #8093F1;
     margin: 0;
@@ -1907,7 +1987,7 @@ html { scroll-behavior: smooth; }
       padding: 80px 40px;
       width: calc(100% - 30px);
     }
-    .test-heading { font-size: 44px; }
+    .test-heading { font-size: 36px; }
     .test-featured { padding: 48px 48px; }
     .test-featured-quote { font-size: 18px; }
     .test-cards { gap: 16px; }
@@ -1922,7 +2002,7 @@ html { scroll-behavior: smooth; }
       margin: 10px;
       border-radius: 16px;
     }
-    .test-heading { font-size: 36px; }
+    .test-heading { font-size: 30px; }
     .test-subheading { font-size: 16px; }
     .test-header { margin-bottom: 40px; }
     .test-featured { padding: 36px 28px; }
@@ -1944,7 +2024,7 @@ html { scroll-behavior: smooth; }
       margin: 8px;
       border-radius: 12px;
     }
-    .test-heading { font-size: 30px; }
+    .test-heading { font-size: 24px; }
     .test-featured { padding: 28px 20px; }
     .test-featured-quote { font-size: 15px; }
     .test-card { padding: 24px 20px; }
@@ -2049,12 +2129,12 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .intro-heading {
-    font-family: 'Philosopher', serif;
-    font-size: 56px; font-weight: 700; color: #2D1B4E;
-    margin: 0; line-height: 1.1; letter-spacing: -0.01em;
+    font-family: 'Sweetie Honey', serif;
+    font-size: 42px; font-weight: 700; color: #2D1B4E;
+    margin: 0; line-height: 1.2; letter-spacing: -0.01em;
   }
   .intro-para {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 17px; font-weight: 400;
     color: #4A3860; line-height: 1.8em; margin: 0;
   }
@@ -2093,7 +2173,7 @@ html { scroll-behavior: smooth; }
   @media (max-width: 1024px) {
     .intro-section { width: calc(100% - 30px); }
     .intro-content { padding: 60px 40px; }
-    .intro-heading { font-size: 44px; }
+    .intro-heading { font-size: 34px; }
     .intro-para { font-size: 16px; }
     .intro-star-inline { width: 48px; }
     .intro-star-2 { width: 40px; }
@@ -2115,7 +2195,7 @@ html { scroll-behavior: smooth; }
       background: linear-gradient(to bottom, transparent 60%, rgba(255,255,255,0.15) 100%);
     }
     .intro-content { padding: 48px 28px; order: 2; }
-    .intro-heading { font-size: 36px; }
+    .intro-heading { font-size: 28px; }
     .intro-para { font-size: 15px; }
     .intro-star-3, .intro-star-4 { display: none; }
     .intro-star-inline { width: 44px; }
@@ -2127,7 +2207,7 @@ html { scroll-behavior: smooth; }
     .intro-photo-wrap { min-height: 320px; }
     .intro-photo { object-position: center 30%; }
     .intro-content { padding: 36px 20px; }
-    .intro-heading { font-size: 30px; }
+    .intro-heading { font-size: 22px; }
     .intro-para { font-size: 14px; }
     .intro-star-inline { width: 36px; }
     .intro-star-2 { display: none; }
@@ -2237,18 +2317,18 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .events-heading {
-    font-family: 'Philosopher', serif;
-    font-size: 52px; font-weight: 700; color: #2D1B4E;
+    font-family: 'Sweetie Honey', serif;
+    font-size: 42px; font-weight: 700; color: #2D1B4E;
     margin: 0; line-height: 1.1;
   }
   .events-subheading {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 17px; color: #4A3860;
     font-weight: 300; letter-spacing: 0.02em;
     line-height: 1.8em; margin: 0;
   }
   .events-note {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px; color: #8093F1;
     font-weight: 300; letter-spacing: 0.04em;
     margin: 0;
@@ -2269,7 +2349,7 @@ html { scroll-behavior: smooth; }
     background: rgba(255, 255, 255, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: #2D1B4E;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 17px;
     letter-spacing: 0.05em;
     text-decoration: none;
@@ -2349,7 +2429,7 @@ html { scroll-behavior: smooth; }
     .events-embed-col { width: 100%; flex: none; }
     .events-embed-col iframe { height: 480px; }
     .events-content-col { width: 100%; flex: none; }
-    .events-heading { font-size: 40px; }
+    .events-heading { font-size: 32px; }
     .ev-btn { align-self: stretch; text-align: center; }
     .events-star-1 { width: 60px; }
     .events-star-2 { width: 36px; }
@@ -2358,7 +2438,7 @@ html { scroll-behavior: smooth; }
   @media (max-width: 768px) {
     .events-section { padding: 60px 24px; width: calc(100% - 20px); margin: 10px; border-radius: 16px; gap: 32px; }
     .events-embed-col iframe { height: 420px; }
-    .events-heading { font-size: 34px; }
+    .events-heading { font-size: 26px; }
     .events-subheading { font-size: 15px; }
     .events-star-3, .events-star-4 { display: none; }
     .events-star-1 { width: 50px; }
@@ -2367,7 +2447,7 @@ html { scroll-behavior: smooth; }
   /* SMALL MOBILE */
   @media (max-width: 480px) {
     .events-section { padding: 50px 16px; width: calc(100% - 16px); margin: 8px; border-radius: 12px; }
-    .events-heading { font-size: 28px; }
+    .events-heading { font-size: 22px; }
     .events-embed-col iframe { height: 380px; }
     .ev-btn { font-size: 15px; padding: 14px 28px; }
     .events-star-2 { display: none; }
@@ -2443,12 +2523,12 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .faq-heading {
-    font-family: 'Philosopher', serif;
+    font-family: 'Sweetie Honey', serif;
     font-size: 56px; font-weight: 700; color: #2D1B4E;
     margin: 0; line-height: 1.1;
   }
   .faq-subheading {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px; color: #4A3860;
     margin: 16px 0 0 0; font-weight: 300; letter-spacing: 0.02em;
   }
@@ -2481,7 +2561,7 @@ html { scroll-behavior: smooth; }
     text-align: left;
   }
   .faq-question-text {
-    font-family: 'Philosopher', serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px; font-weight: 700; color: #2D1B4E;
     margin: 0; line-height: 1.3;
   }
@@ -2541,7 +2621,7 @@ html { scroll-behavior: smooth; }
     padding: 0 32px 28px 32px;
   }
   .faq-answer p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px; color: #4A3860;
     line-height: 1.8em; margin: 0; font-weight: 300;
     border-top: 1px solid rgba(179, 136, 235, 0.15);
@@ -2692,13 +2772,13 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .cta-heading {
-    font-family: 'Philosopher', serif;
+    font-family: 'Sweetie Honey', serif;
     font-size: 64px; font-weight: 700; color: white;
     margin: 0; line-height: 1.1;
     text-shadow: 0 2px 20px rgba(0,0,0,0.3);
   }
   .cta-subheading {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px; color: rgba(255, 255, 255, 1);
     margin: 0; font-weight: 400;
     line-height: 1.7em; letter-spacing: 0.01em;
@@ -2720,7 +2800,7 @@ html { scroll-behavior: smooth; }
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.35);
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     letter-spacing: 0.05em;
     text-decoration: none;
@@ -2887,7 +2967,7 @@ html { scroll-behavior: smooth; }
   }
   .footer-logo { width: 120px; height: auto; }
   .footer-tagline {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px; color: #4A3860;
     line-height: 1.7em; font-weight: 300;
     margin: 0; max-width: 280px;
@@ -2904,12 +2984,12 @@ html { scroll-behavior: smooth; }
     flex-direction: column; gap: 16px;
   }
   .footer-form-heading {
-    font-family: 'Philosopher', serif;
+    font-family: 'Sweetie Honey', serif;
     font-size: 32px; font-weight: 700;
     color: #2D1B4E; margin: 0;
   }
   .footer-form-sub {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 15px; color: #4A3860;
     margin: 0; font-weight: 300; line-height: 1.6em;
   }
@@ -2924,7 +3004,7 @@ html { scroll-behavior: smooth; }
     background: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(179, 136, 235, 0.25);
     border-radius: 12px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 15px; color: #2D1B4E;
     box-sizing: border-box;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -2955,7 +3035,7 @@ html { scroll-behavior: smooth; }
     background: rgba(255, 255, 255, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: #2D1B4E;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     letter-spacing: 0.05em;
     cursor: pointer;
@@ -3024,7 +3104,7 @@ html { scroll-behavior: smooth; }
   .footer-bottom .footer-copyright:last-child { text-align: right; }
   .footer-bottom .footer-copyright { flex: 1; }
   .footer-copyright {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 13px; color: rgba(74, 56, 96, 0.6);
     margin: 0; font-weight: 300; letter-spacing: 0.02em;
   }
@@ -3072,9 +3152,39 @@ html { scroll-behavior: smooth; }
     .footer-star-1 { width: 40px; }
   }
 
+  /* Spaced uppercase treatment for all section subheadings */
+  .intro-statement-sub,
+  .ben-subheading,
+  .test-subheading,
+  .events-subheading,
+  .faq-subheading {
+    color: #8B6BB5;
+    letter-spacing: 0.12em;
+    font-weight: 400;
+  }
+
+  /* Soft glow on all Sweetie Honey headings */
+  .spac-hero-title,
+  .offerings-heading,
+  .offer-card-content h3,
+  .ben-heading,
+  .ben-card-title,
+  .com-heading,
+  .test-heading,
+  .test-featured-name,
+  .test-author-name,
+  .intro-heading,
+  .events-heading,
+  .faq-heading,
+  .cta-heading,
+  .footer-form-heading {
+    text-shadow:
+      0 0 20px rgba(253, 197, 245, 0.6),
+      0 0 40px rgba(179, 136, 235, 0.35),
+      0 0 80px rgba(128, 147, 241, 0.2);
+  }
+
   /* Sitewide lowercase — hero and testimonials are excluded */
   body { text-transform: lowercase; }
   .spac-hero-content, .spac-hero-content *,
   .testimonials-section, .testimonials-section * { text-transform: none; }
-    .footer-star-2 { display: none; }
-  }
