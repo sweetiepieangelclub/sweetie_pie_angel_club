@@ -9,6 +9,67 @@ function openMobileMenu() {
     document.getElementById('hamburgerBtn').classList.remove('open');
   }
 
+// ── SCROLL PROGRESS BAR ──────────────────────────────────────────────────────
+const scrollProgressBar = document.getElementById('scroll-progress');
+function updateScrollProgress() {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  scrollProgressBar.style.width = pct + '%';
+}
+
+// ── PARALLAX BLOBS ────────────────────────────────────────────────────────────
+const blobEls = Array.from(document.querySelectorAll('[class*="-blob-"]'));
+const parallaxFactors = [0.06, 0.1, 0.08, 0.12, 0.05, 0.09, 0.07];
+blobEls.forEach(blob => {
+  const computed = window.getComputedStyle(blob).transform;
+  blob.dataset.baseTransform = (computed === 'none') ? '' : computed;
+});
+function updateParallax() {
+  const scrollY = window.scrollY;
+  blobEls.forEach((blob, i) => {
+    const factor = parallaxFactors[i % parallaxFactors.length];
+    const offset = scrollY * factor;
+    const base = blob.dataset.baseTransform;
+    blob.style.transform = base ? `${base} translateY(${offset}px)` : `translateY(${offset}px)`;
+  });
+}
+
+// ── UNIFIED SCROLL HANDLER ────────────────────────────────────────────────────
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(() => {
+      updateScrollProgress();
+      updateParallax();
+      ticking = false;
+    });
+    ticking = true;
+  }
+}, { passive: true });
+updateScrollProgress();
+
+// ── STAGGERED CARD ENTRANCE ───────────────────────────────────────────────────
+function staggerCards(sectionSelector, cardSelector, visibleClass) {
+  const section = document.querySelector(sectionSelector);
+  if (!section) return;
+  const cards = section.querySelectorAll(cardSelector);
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        cards.forEach((card, i) => {
+          setTimeout(() => card.classList.add(visibleClass), i * 200);
+        });
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.1 });
+  obs.observe(section);
+}
+staggerCards('.offerings-section', '.offer-card', 'off-visible');
+staggerCards('.benefits-section', '.ben-card', 'ben-visible');
+
+// ── EXISTING OBSERVERS (non-card elements) ────────────────────────────────────
 const introObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('intro-statement-visible');
@@ -29,16 +90,14 @@ const offObserver = new IntersectionObserver((entries) => {
       if (entry.isIntersecting) entry.target.classList.add('off-visible');
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.off-animate').forEach(el => offObserver.observe(el));
+  document.querySelectorAll('.off-animate:not(.offer-card)').forEach(el => offObserver.observe(el));
 
 const benObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('ben-visible');
-      }
+      if (entry.isIntersecting) entry.target.classList.add('ben-visible');
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.ben-animate').forEach(el => benObserver.observe(el));
+  document.querySelectorAll('.ben-animate:not(.ben-card)').forEach(el => benObserver.observe(el));
 
 const comObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -49,9 +108,7 @@ const comObserver = new IntersectionObserver((entries) => {
 
 const testObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('test-visible');
-      }
+      if (entry.isIntersecting) entry.target.classList.add('test-visible');
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.test-animate').forEach(el => testObserver.observe(el));

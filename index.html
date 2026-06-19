@@ -8,7 +8,7 @@
   <meta name="description" content="Sweetie Pie Angel Club: Reiki, breathwork &amp; spiritual wellness for the curious soul. Book a session today.">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preload" as="image" href="images/42F62308-7E06-468F-AFC5-97DD6D9888D6.JPG" fetchpriority="high">
-  <link href="css/main.css?v=18" rel="stylesheet" type="text/css">
+  <link href="css/main.css?v=24" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/sweetiepieangelclub-9ea0ab.webflow.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body styl="backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);" class="body-2">
+  <div id="scroll-progress"></div>
   <!-- ============================================================
        HERO SECTION
        - Edit the site title, tagline, and button text below
@@ -224,8 +225,6 @@
               <img class="collab-logo light collab-logo-maharose" src="images/Maha_Rose.webp" alt="Maha Rose">
             </div>
             <div class="collab-item">
-              
-            <div class="collab-item">
               <img class="collab-logo colored collab-logo-reforesters" src="images/reforesters-logo-tan.svg" alt="Reforesters Laboratory">
             </div>
             <div class="collab-item">
@@ -254,7 +253,7 @@
         <h2 class="offerings-heading off-animate off-delay-2">offerings</h2>
         <div class="offerings-row">
           <div class="offer-card offer-card-1 off-animate off-delay-2">
-            <img src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69cc7a1b1b2aea834dcbb707_2CD29FF8-356C-4899-A060-8D10D4DE0C36.JPG" alt="Reiki">
+            <img src="images/offering-reiki.jpg" alt="Reiki">
             <div class="offer-card-overlay"></div>
             <div class="offer-card-content">
               <!-- ✏️ EDIT: Offering 1 title -->
@@ -270,7 +269,7 @@
             </div>
           </div>
           <div class="offer-card offer-card-2 off-animate off-delay-3">
-            <img src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69cc7a32c5c8bffde7e509de_3EED097D-FB8D-4440-92CA-22ADF1B57E58.JPG" alt="Breathwork">
+            <img src="images/offering-breathwork.jpg" alt="Breathwork">
             <div class="offer-card-overlay"></div>
             <div class="offer-card-content">
               <!-- ✏️ EDIT: Offering 2 title -->
@@ -286,7 +285,7 @@
             </div>
           </div>
           <div class="offer-card offer-card-3 off-animate off-delay-4">
-            <img src="https://cdn.prod.website-files.com/69cc78449d660c16d3dfddf0/69cc7a1673ffcadee2703141_131858E2-F51E-459F-BE5B-9C84C702B55B.JPG" alt="Events">
+            <img src="images/offering-events.jpg" alt="Events">
             <div class="offer-card-overlay"></div>
             <div class="offer-card-content">
               <!-- ✏️ EDIT: Offering 3 title -->
@@ -422,10 +421,10 @@
           <p class="com-para com-animate com-delay-3">the sweetie pie angel club is a living, breathing community for people who want to grow with like-hearted folks. it's a space for tender badasses, soft powerhouses, and sensitive sweeties to deepen their self-trust, regulate their nervous systems, and actually connect with people who get it. no hierarchy. no pretending. no "performative healing." just real tools, real conversations, and real support.</p>
           <!-- ✏️ EDIT: Bullet point perks (add or remove <li> items as needed) -->
           <ul class="com-perks com-animate com-delay-4">
-            <li class="com-perk"><span class="com-perk-dot"></span>rotating 4-week breathwork courses</li>
-            <li class="com-perk"><span class="com-perk-dot"></span>A supportive community of like-minded souls</li>
-            <li class="com-perk"><span class="com-perk-dot"></span>weekly prompts, essays, affirmations + bite-sized practices</li>
-            <li class="com-perk"><span class="com-perk-dot"></span>community discussions + accountability hangs (yaps, parallel play, coworking, creative convos)</li>
+            <li class="com-perk"><span class="com-perk-dot">★</span>rotating 4-week breathwork courses</li>
+            <li class="com-perk"><span class="com-perk-dot">★</span>a supportive community of like-minded souls</li>
+            <li class="com-perk"><span class="com-perk-dot">★</span>weekly prompts, essays, affirmations + bite-sized practices</li>
+            <li class="com-perk"><span class="com-perk-dot">★</span>community discussions + accountability hangs (yaps, parallel play, coworking, creative convos)</li>
           </ul>
           <a class="com-btn com-animate com-delay-5" href="https://www.skool.com/sweetie-pie-angel-club-5213/about" target="_blank">
             <span class="btn-shimmer"></span>
@@ -452,9 +451,9 @@
         <div class="test-header">
           <div class="test-holo-line test-animate test-delay-1"></div>
           <!--  ✏️ EDIT HEADING HERE  -->
-          <h2 class="test-heading test-animate test-delay-2">What People Are Saying</h2>
+          <h2 class="test-heading test-animate test-delay-2">what people are saying</h2>
           <!--  ✏️ EDIT SUBHEADING HERE  -->
-          <p class="test-subheading test-animate test-delay-3">Real words from real souls who showed up for themselves.</p>
+          <p class="test-subheading test-animate test-delay-3">real words from real souls who showed up for themselves.</p>
         </div>
         <!--  FEATURED TESTIMONIAL  -->
         <div class="test-featured test-animate test-delay-3">
@@ -552,7 +551,7 @@ Mina created such a soft, supportive container that made it easy to learn, pract
         <div class="events-content-col">
           <div class="events-holo-line events-animate events-delay-2"></div>
           <!-- ✏️ EDIT: Events heading -->
-          <h2 class="events-heading events-animate events-delay-3">Upcoming Events</h2>
+          <h2 class="events-heading events-animate events-delay-3">upcoming events</h2>
           <!-- ✏️ EDIT: Events subheading -->
           <p class="events-subheading events-animate events-delay-4">join the like-hearted sweetie pie angel community in brooklyn or online for grounding yet expansive, connection-focused, music-forward classes and events. every offering is beginner friendly, open to all levels of experience. take the leap &hearts;</p>
           <p class="events-note events-animate events-delay-4">Powered by Luma · All times in EST</p>
@@ -582,8 +581,8 @@ Mina created such a soft, supportive container that made it easy to learn, pract
         <img class="faq-star faq-star-4" src="images/Pink_Star.png" alt="star">
         <div class="faq-header">
           <div class="faq-holo-line faq-animate faq-delay-1"></div>
-          <h2 class="faq-heading faq-animate faq-delay-2">Frequently Asked Questions</h2>
-          <p class="faq-subheading faq-animate faq-delay-3">Everything you need to know before your first session.</p>
+          <h2 class="faq-heading faq-animate faq-delay-2">frequently asked questions</h2>
+          <p class="faq-subheading faq-animate faq-delay-3">everything you need to know before your first session.</p>
         </div>
         <div class="faq-list">
           <div class="faq-item faq-animate faq-delay-3">
@@ -719,12 +718,12 @@ Mina created such a soft, supportive container that made it easy to learn, pract
         <div class="cta-inner">
           <div class="cta-holo-line cta-animate cta-delay-1"></div>
           <!-- ✏️ EDIT: CTA heading -->
-          <h2 class="cta-heading cta-animate cta-delay-2">Ready to Come Back to Yourself?</h2>
+          <h2 class="cta-heading cta-animate cta-delay-2">ready to come back to yourself?</h2>
           <!-- ✏️ EDIT: CTA subheading -->
-          <p class="cta-subheading cta-animate cta-delay-3">Whether you're new to energy healing or returning to the practice, there's a place for you here. Book a session and take the first step toward feeling like yourself again.</p>
+          <p class="cta-subheading cta-animate cta-delay-3">whether you're new to energy healing or returning to the practice, there's a place for you here. book a session and take the first step toward feeling like yourself again.</p>
           <a class="cta-btn cta-animate cta-delay-4" href="https://calendly.com/sweetiepieangelclub" target="_blank">
             <span class="btn-shimmer"></span>
-            Book A Session
+            book a session
           </a>
         </div>
       </div>
@@ -773,14 +772,14 @@ Mina created such a soft, supportive container that made it easy to learn, pract
                   send message
                 </button>
               </form>
-              <div id="form-success" style="display:none; margin-top:24px; text-align:center; color:#2D1B4E; font-family:'Lato',sans-serif; font-size:16px; line-height:1.6;">
+              <div id="form-success" style="display:none; margin-top:24px; text-align:center; color:#2D1B4E; font-family:'Nunito',sans-serif; font-size:16px; line-height:1.6;">
                 thank you so much for reaching out. mina will be in touch soon.
               </div>
             </div>
           </div>
           <div class="footer-divider"></div>
           <div class="footer-bottom">
-            <p class="footer-copyright">© 2025 Sweetie Pie Angel Club. All rights reserved.</p>
+            <p class="footer-copyright">© 2026 Sweetie Pie Angel Club. All rights reserved.</p>
             <div class="footer-holo-line"></div>
             <p class="footer-copyright">site by <a href="https://lunavolcandev.xyz" target="_blank" style="color:inherit; text-decoration:underline;">Luna Volcan</a></p>
           </div>

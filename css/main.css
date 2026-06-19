@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'Sweetie Honey';
-  src: url('../fonts/Sweetie Honey.otf') format('opentype'),
-       url('../fonts/Sweetie Honey.ttf') format('truetype');
+  font-family: 'LDHotBetty';
+  src: url('../fonts/LDHotBetty.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,6 +8,21 @@
 body {
     position: relative;
     overflow-x: hidden;
+  }
+  #scroll-progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    z-index: 9999;
+    background: linear-gradient(90deg, #FDC5F5, #B388EB, #8093F1, #72DDF7, #FDC5F5, #B388EB);
+    background-size: 200% auto;
+    animation: holoProgress 4s linear infinite;
+    pointer-events: none;
+  }
+  @keyframes holoProgress {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
   }
   /* Crystal photo background */
   body::before {
@@ -42,14 +56,14 @@ body {
   -webkit-backdrop-filter: blur(20px);
 }
 html { scroll-behavior: smooth; }
-  #webflow-badge { display: none !important; }
+  #webflow-badge, .w-webflow-badge { display: none !important; }
 
 .spac-hero-wrapper {
     position: relative;
     width: calc(100% - 30px);
     height: 95vh;
     overflow: hidden;
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     border-radius: 20px;
     margin: 15px;
   }
@@ -314,8 +328,10 @@ html { scroll-behavior: smooth; }
     width: 22px;
     height: 2px;
     border-radius: 1.7px;
-    background: rgba(45, 27, 78, 0.85);
-    box-shadow: 0 1px 4px rgba(45, 27, 78, 0.3);
+    background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,0.95), rgba(255,255,255,0.5));
+    box-shadow:
+      0 0 6px rgba(255, 255, 255, 0.7),
+      0 0 14px rgba(179, 136, 235, 0.4);
     transform-origin: center;
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
   }
@@ -467,8 +483,8 @@ html { scroll-behavior: smooth; }
     gap: 20px;
   }
   .spac-hero-title {
-    font-family: 'Sweetie Honey', serif;
-    font-size: 96px;
+    font-family: 'LDHotBetty', serif;
+    font-size: 64px;
     color: white;
     margin: 0;
     line-height: 1.0;
@@ -947,7 +963,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .offerings-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 46px; font-weight: 700; color: #2D1B4E;
     text-align: center; margin: 0 0 60px 0;
     position: relative; z-index: 2;
@@ -995,7 +1011,7 @@ html { scroll-behavior: smooth; }
     z-index: 2; box-sizing: border-box;
   }
   .offer-card-content h3 {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 28px; color: #ffffff;
     margin: 0 0 12px 0; line-height: 1.2;
   }
@@ -1272,7 +1288,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .ben-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 46px;
     font-weight: 700;
     color: #2D1B4E;
@@ -1338,7 +1354,7 @@ html { scroll-behavior: smooth; }
     gap: 16px;
   }
   .ben-card-title {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 24px;
     font-weight: 700;
     color: #2D1B4E;
@@ -1514,7 +1530,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .com-heading {
-    font-family: 'Sweetie Honey', serif; font-size: 42px; font-weight: 700;
+    font-family: 'LDHotBetty', serif; font-size: 42px; font-weight: 700;
     color: #2D1B4E; margin: 0; line-height: 1.1; letter-spacing: -0.01em;
   }
   .com-para {
@@ -1527,8 +1543,10 @@ html { scroll-behavior: smooth; }
     font-family: 'Nunito', sans-serif; font-size: 16px; color: #4A3860; font-weight: 400;
   }
   .com-perk-dot {
-    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
-    background: linear-gradient(135deg, #FDC5F5, #B388EB, #8093F1);
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #B388EB;
+    line-height: 1;
   }
   @property --com-glow-angle {
     syntax: '<angle>';
@@ -1768,7 +1786,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .test-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 46px;
     font-weight: 700;
     color: #2D1B4E;
@@ -1826,7 +1844,7 @@ html { scroll-behavior: smooth; }
     width: 100%;
   }
   .test-featured-name {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 20px;
     font-weight: 700;
     color: #2D1B4E;
@@ -1953,7 +1971,7 @@ html { scroll-behavior: smooth; }
     padding-top: 16px;
   }
   .test-author-name {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 18px;
     font-weight: 700;
     color: #2D1B4E;
@@ -2129,7 +2147,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .intro-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 42px; font-weight: 700; color: #2D1B4E;
     margin: 0; line-height: 1.2; letter-spacing: -0.01em;
   }
@@ -2317,7 +2335,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .events-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 42px; font-weight: 700; color: #2D1B4E;
     margin: 0; line-height: 1.1;
   }
@@ -2523,7 +2541,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .faq-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 56px; font-weight: 700; color: #2D1B4E;
     margin: 0; line-height: 1.1;
   }
@@ -2772,7 +2790,7 @@ html { scroll-behavior: smooth; }
     100% { background-position: 400% center; }
   }
   .cta-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 64px; font-weight: 700; color: white;
     margin: 0; line-height: 1.1;
     text-shadow: 0 2px 20px rgba(0,0,0,0.3);
@@ -2919,7 +2937,7 @@ html { scroll-behavior: smooth; }
       inset 0 1px 0 rgba(255, 255, 255, 0.9),
       inset 0 -1px 0 rgba(255, 255, 255, 0.3);
     position: relative;
-    overflow: visible;
+    overflow: hidden;
   }
   .footer-blob-1 {
     position: absolute; top: -80px; left: -80px;
@@ -2984,7 +3002,7 @@ html { scroll-behavior: smooth; }
     flex-direction: column; gap: 16px;
   }
   .footer-form-heading {
-    font-family: 'Sweetie Honey', serif;
+    font-family: 'LDHotBetty', serif;
     font-size: 32px; font-weight: 700;
     color: #2D1B4E; margin: 0;
   }
@@ -3163,7 +3181,7 @@ html { scroll-behavior: smooth; }
     font-weight: 400;
   }
 
-  /* Soft glow on all Sweetie Honey headings */
+  /* Soft glow on all LDHotBetty headings */
   .spac-hero-title,
   .offerings-heading,
   .offer-card-content h3,
