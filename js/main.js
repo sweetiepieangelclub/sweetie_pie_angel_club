@@ -144,6 +144,20 @@ const ctaObserver = new IntersectionObserver((entries) => {
   }, { threshold: 0.1 });
   document.querySelectorAll('.cta-animate').forEach(el => ctaObserver.observe(el));
 
+const trainObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('train-visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.train-animate').forEach(el => trainObserver.observe(el));
+
+const mcObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('mc-visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.mc-animate').forEach(el => mcObserver.observe(el));
+
 const footerObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('footer-visible');
