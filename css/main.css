@@ -6,6 +6,9 @@
   font-style: normal;
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
     position: relative;
     overflow-x: hidden;
@@ -1907,7 +1910,31 @@ html { scroll-behavior: smooth; }
     margin: 0;
     font-weight: 300;
     font-style: italic;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
+  .test-quote.expanded {
+    display: block;
+    overflow: visible;
+  }
+  .test-read-more {
+    background: none;
+    border: none;
+    padding: 6px 0 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #8B6BB1;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: block;
+  }
+  .test-read-more:hover { color: #2D1B4E; }
   .test-author {
     display: flex;
     flex-direction: column;
@@ -3309,6 +3336,22 @@ html { scroll-behavior: smooth; }
   pointer-events: none;
 }
 .train-btn:hover .btn-shimmer { transform: translateX(100%); }
+/* ── PHOTO SCROLL ANIMATIONS ─────────────────────────────────────────────── */
+.photo-animate {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.photo-animate.photo-visible {
+  opacity: 1;
+}
+.photo-animate img {
+  transform: scale(1.06);
+  transition: transform 1.2s ease;
+}
+.photo-animate.photo-visible img {
+  transform: scale(1);
+}
+
 .train-animate {
   opacity: 0; transform: translateY(28px);
   transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -3511,6 +3554,7 @@ html { scroll-behavior: smooth; }
   width: 100% !important;
   max-width: 520px !important;
   margin: 0 auto !important;
+  overflow: hidden !important;
 }
 /* Strip Flodesk's white card wrapper */
 #fd-form-6a3c07bfdc8a507181d81b2c > div,

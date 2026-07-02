@@ -165,6 +165,29 @@ const footerObserver = new IntersectionObserver((entries) => {
   }, { threshold: 0.1 });
   document.querySelectorAll('.footer-animate').forEach(el => footerObserver.observe(el));
 
+  // ── PHOTO ENTRANCE ANIMATIONS ────────────────────────────────────────────
+  const photoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('photo-visible');
+        photoObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.photo-animate').forEach(el => photoObserver.observe(el));
+
+  // ── TESTIMONIAL READ MORE ─────────────────────────────────────────────────
+  document.querySelectorAll('.test-card .test-quote').forEach(quote => {
+    const btn = document.createElement('button');
+    btn.className = 'test-read-more';
+    btn.textContent = 'read more';
+    quote.after(btn);
+    btn.addEventListener('click', () => {
+      const expanded = quote.classList.toggle('expanded');
+      btn.textContent = expanded ? 'read less' : 'read more';
+    });
+  });
+
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
